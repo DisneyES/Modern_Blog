@@ -12,7 +12,7 @@ Stephanie Walsh - Part Singer &amp; Part Awesome Persons
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<a href="#" class="name"> Stephanie Walsh</a>
+		<%= link_to "Stephanie Walsh", root_path, class:"name" %> 
 <nav>
 	<%= link_to "Articles", posts_path %>
 	<a href="#"> Projects</a>
@@ -22,6 +22,15 @@ Stephanie Walsh - Part Singer &amp; Part Awesome Persons
 	</header>
 
 <%= yield %>
+
+<footer id="main_footer">
+	<p class="copyright"> Rails/ Design by &copy; <a href="http://giovanicamara.com" target="_blank">Giovani Camara</a></p>
+	<nav>
+	<a href="https://twitter.com/stephanitly1" target="_blank"><i class="fa fa-twitter"></i></a>
+	<a href="https://www.instagram.com/stephanitly/" target="_blank"><i class="fa fa-instagram"></i></a>
+	<a href="http://stephanitly.tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a>
+	</nav>
+</footer> <!--end of footer-->
 
 </body>
 </html>
