@@ -21,6 +21,7 @@ body{
 width: 80%;
 max-width: 760px;
 margin: 0 auto;
+text-align: center;
 }
 .wrapper_padding{
 	padding: 4rem 0;
@@ -68,6 +69,8 @@ p,ul,ol{
 }
 
 hr{
+	  
+    padding-bottom: 18px;
 		width: 3em;
 		display: block;
 		height: 2px;
@@ -165,10 +168,6 @@ input[type="submit"], .button{
 		color: $highlight;
 	}
 }
-
-
-
-
 
 
 
