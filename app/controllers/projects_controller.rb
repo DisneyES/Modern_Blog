@@ -6,7 +6,7 @@ class ProjectsController < ApplicationController
 	end
 
 	def new
-		@projects = Project.new
+		@project = Project.new
 	end
 
 	def create
@@ -22,6 +22,23 @@ class ProjectsController < ApplicationController
 
 	def show
 		
+	end
+
+	def edit
+		
+	end
+
+	def update
+		if @project.update project_params
+			redirect_to @project, notice: "Nice Stephanie! That poject was succesfully saved!"
+	else
+		render 'edit'
+	end
+	end
+
+	def destroy
+		@project.destroy
+		redirect_to projects_path
 	end
 
 	private

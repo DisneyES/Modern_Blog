@@ -1,12 +1,12 @@
-<%= form_for @projects do |f| %>
-	<% if @projects.errors.any? %>
- 	<h2><%= pluralize(@projects.errors.count, "errors") %> prevented this projects from saving:</h2>
- 	<ul>
- 	<% @projects.errors.full_messages.each do |msg| %>
- 	<li><%= msg %> </li>
- 	<%end %>
- </ul>
-<%end %> 
+<%= form_for @project do |f| %>
+	<% if @project.errors.any? %>
+		<h2><%= pluralize(@project.errors.count, "error") %> prevented this project from saving:</h2>
+		<ul>
+			<% @project.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+		</ul>
+	<% end %>
 
 <%= f.label :title %> <br>
 <%= f.text_field :title %>
