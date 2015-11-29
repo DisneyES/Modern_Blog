@@ -1,16 +1,14 @@
 <div class="wrapper wrapper_padding clearfix">
-	<br>
-
 	<div class="col-1 about homepage_content">
 	<h2>About</h2>	
 	<hr>
 	<p>Hi, my name is Stephanie Walsh &amp; I love many things.
 	</p> <p>My passions include singing, doing awesome things, and puppies...Mainly puppies.<p> By day I go to <a href="#">school</a>, but by night I practice my career in being the first astronaut, superhero,doctor,lawyer, opera- person.</p> <p>But anyways, thanks for stopping by!</p>
-
 	</div>
 
 	<div class="col-2 homepage_content">
 		<h2>Stuff I've Written</h2>
+
 
 <% @posts.each do |post| %>
 		<hr>
@@ -21,12 +19,13 @@
 
 	<div class="col-3 homepage_content">
 		<h2>Stuff I've Built</h3>
+		
+		<% @projects.each do |project| %>
 		<hr>
-		<h3><a href="#">Random</a></h3>
-		<p class="date"> Friday april 10th</p>
-		<h3><a href="#">random2</a></h3>
-		<p class="date"> Friday april 10th</p>
-		<h3> <a href="#">Random 3</a></h3>
-		<p class="date"> Friday april 10th</p>
+		<h3><a href=""><%= link_to project.title, project%></a></h3>
+		<p class="date"> <%= project.created_at.strftime("%A, %b %d")%></p>
+		<%end %>
+	
+
 	</div>
-</div> <!--wrapper clearfix end-->
+</div> 

@@ -12,6 +12,10 @@ $border: #E9E9E9;
 body{
 	font-family: 'Raleway', sans-serif;
 }
+
+#content{
+	text-align:  center;
+}
 .wrapper {
 	width:90%; 
 	margin: 0 auto;
@@ -70,13 +74,13 @@ p,ul,ol{
 
 hr{
 	  
-    padding-bottom: 18px;
+   
 		width: 3em;
 		display: block;
 		height: 2px;
 		border: 0;
 		border-top: 2px solid $highlight;
-		margin: 2rem 0;
+		
 	}
 	/* Typography end */
 #main_navigation{
@@ -169,6 +173,18 @@ input[type="submit"], .button{
 	}
 }
 
+.project_button {
+	background: $highlight;
+	color: $white;
+	text-decoration: none;
+	padding: 1em 2em;
+
+}
+
+.button_wrapper{
+	margin: 4em 0 0 0;
+	text-align: center;
+}
 
 
 	@import 'welcome';

@@ -1,4 +1,4 @@
-#post_wrapper{
+#posts_wrapper{
 	padding: 3em 0;
 	text-align: center;
 	.post{
@@ -9,7 +9,7 @@
 
 		}
 		h2 {
-			margin: 0;
+			margin-bottom: 15px;
 			
 			font-size: 2em;
 			text-transform: uppercase;
@@ -30,7 +30,10 @@
 
 
 
-#post_show_content{
+
+
+#posts_show_content{
+
 	header {
 	text-align: center;
 	.date{
@@ -45,6 +48,7 @@
 			margin: 2em auto;
 		}
 	}
+
 }
 #share_box{
 	text-align: center;
