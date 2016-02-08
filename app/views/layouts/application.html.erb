@@ -21,6 +21,14 @@ Stephanie Walsh - Part Singer &amp; Part Awesome Persons
 
 	</header>
 
+<% if notice %>
+	<p class="notice"><%= notice %></p>
+	<% elsif alert %>
+		
+    <p class="alert"><%= alert %></p>
+
+    <% end %>
+
 <%= yield %>
 
 <footer id="main_footer">
